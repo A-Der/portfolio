@@ -1,0 +1,82 @@
+.theme--light {
+--background: white;
+}
+.theme--dark {
+--background: black;
+}
+#root{
+  // background-image: url(./assets/berber5.png);
+
+}
+.hero{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  // background-color: white;
+  // background: var(--background);
+
+  .left-side{
+    background-image: url(./assets/berber2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 230px;
+  }
+}
+
+.projs-wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 30px;
+
+
+  div.proj{
+  text-align: center;
+  height: 200px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+
+  .proj1-image{
+    height: 150px;
+    background-image: url(./assets/proj1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .proj2-image{
+    height: 150px;
+    background-image: url(./assets/proj2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .proj3-image{
+    height: 150px;
+    background-image: url(./assets/proj3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .proj4-image{
+    height: 150px;
+    background-image: url(./assets/proj4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  }
+}
+
+.linkedin-logo, .github-logo {
+  height: 50px;
+  // width: ;
+}
+
+.pattern {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  background-image: url(./assets/berber5.png);
+  background-size: contain;
+}
