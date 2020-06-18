@@ -13,7 +13,7 @@ const Home = () => {
             Assia Deramchi<br></br>
             Junior Full Stack Web Developer
             <hr></hr>
-            Hire me please, I'm proper half decent I swear.
+            Hire me please, Im proper half decent I swear.
           </code>
         </div>
       </div>
