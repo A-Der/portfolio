@@ -10,7 +10,7 @@ const Home = () => {
         </div>
         <div className="right-side">
           <code>
-            Assia Deramchi<br></br>
+            Assia Deramchi <em>(Ah-See-Ya)</em><br></br>
             Junior Full Stack Web Developer
             <hr></hr>
             Hire me please, Im proper half decent I swear.
