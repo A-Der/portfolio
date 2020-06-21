@@ -1,21 +1,41 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Home from './components/Home'
-import Proj from './components/projects/Proj'
-import Proj1 from './components/projects/Proj1'
+import HeroBanner from './components/HeroBanner'
+import AllProj from './components/projects/AllProj'
 import Contact from './components/Contact'
 
 const App = () => {
+
+  const [theme, setTheme] = React.useState('theme--light')
+
+
+  const changeTheme = () => {
+    console.log('click')
+    if (theme === 'theme--light') {
+      setTheme('theme--dark')
+    } else {
+      setTheme('theme--light')
+    }
+  }
+
+
   return (
-    <>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/project1" component={Proj1}/>
-        </Switch>
-      </BrowserRouter>
-    </>
+    <div className={theme}>
+      
+      <div className="switcher switcher--large">
+        <input onChange={changeTheme} type="checkbox" className="switcher__input" id="switcher"/>
+        <label htmlFor="switcher" className="switcher__label">
+          <span className="switcher__control"></span>
+          <span className="switcher__mode">Mode</span>
+        </label>
+      </div>
+
+
+      <HeroBanner />
+      <AllProj />
+      <Contact />
+    </div>
   )
 }
 

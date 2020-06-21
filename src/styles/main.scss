@@ -1,77 +1,183 @@
+*{
+  font-family: monospace;
+  margin: 0 auto;
+}
+
+
 .theme--light {
 --background: white;
+--proj-text: white;
+--card-color: black;
+--text-color: black;
+--neck-image: url(./assets/berber2.png);
+--github-logo: url(./assets/github.png);
 }
 .theme--dark {
---background: black;
+  --background: black;
+  --proj-text: black;
+  --card-color: white;
+  --text-color: white;
+  --neck-image: url(./assets/berber2inverted.png);
+  --github-logo: url(./assets/github-inverted.png);
 }
 #root{
-  // background-image: url(./assets/berber5.png);
-
+  // background-image: url(./assets/berber3.png);
+  // background-size: contain
 }
+
+.switcher__label {
+  display:flex;
+  justify-content: flex-end;
+  // justify-content: center;
+  // align-items:center;
+  // margin-right:3em;
+  background-color: var(--background);
+  width: 100%;
+  color: var(--text-color);
+}
+
+.switcher__control {
+  position:relative;
+  
+  width:3em;
+  height:1em;
+  margin-right:0.5em;
+  background-color: var(--text-color);
+  border:1px solid var(--grey);
+  border-radius:30px;
+  box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.switcher__control::before {
+  content:"";
+  position: absolute;
+  top:calc(-1.75em / 4);
+  left: calc(100% - 1.75rem);
+  
+  width:1.75rem;
+  height:1.75rem;
+  background:grey;
+  border:1px solid var(--grey);
+  border-radius:50%;
+  
+  transition:0.2s;
+}
+.switcher__input:checked + .switcher__label .switcher__control::before {
+  left:-1px;
+}
+.switcher__mode::before {
+  content:"Dark ";
+}
+.switcher__input:checked + .switcher__label .switcher__mode::before {
+  content:"Light ";
+}
+.switcher__input {
+  display:none;
+}
+
 .hero{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  // background-color: white;
-  // background: var(--background);
+  background: var(--background);
+  color: var(--text-color);
 
   .left-side{
-    background-image: url(./assets/berber2.png);
+    background-image: var(--neck-image);
       background-size: contain;
       background-repeat: no-repeat;
       height: 300px;
       width: 230px;
   }
 }
+.about{
+  background: var(--background);
+  color: var(--text-color);
+}
 
-.projs-wrapper {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-gap: 30px;
+.proj-box{
+  background: var(--background);
 
+  display: flex;
+  justify-content: center;
+  .projs-wrapper {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 30px;
+  
+  
+    div.proj1, div.proj2, div.proj3, div.proj4{
+    text-align: center;
+    height: 15em;
+    width: 20em;
+    background-color: var(--card-color);
+    color: var(--proj-text);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 2em;
+  
 
-  div.proj{
-  text-align: center;
-  height: 200px;
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-
-  .proj1-image{
-    height: 150px;
-    background-image: url(./assets/proj1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .proj2-image{
-    height: 150px;
-    background-image: url(./assets/proj2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .proj3-image{
-    height: 150px;
-    background-image: url(./assets/proj3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .proj4-image{
-    height: 150px;
-    background-image: url(./assets/proj4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+    .proj1-image{
+      height: 150px;
+      background-image: url(./assets/proj1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .proj2-image{
+      height: 150px;
+      background-image: url(./assets/proj2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .proj3-image{
+      height: 150px;
+      background-image: url(./assets/proj3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  
+    .proj4-image{
+      height: 150px;
+      background-image: url(./assets/proj4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    }
   }
 }
 
-.linkedin-logo, .github-logo {
-  height: 50px;
-  // width: ;
+.proj-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+
+  .clip-box{
+    display: flex;
+    justify-content: center;
+    video{
+      width: 65%;
+    }
+  }
 }
+
+.contact{
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+
+  .linkedin-logo, .github-logo {
+    height: 40px;
+    margin: 5px;
+  }
+  .github-logo{
+    // background-image: url(.assets/github.png);
+  }
+}
+
 
 .pattern {
   height: 60px;
