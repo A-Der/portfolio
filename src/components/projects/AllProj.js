@@ -10,6 +10,7 @@ function AllProj() {
   return (
     <>
       <div className="proj-box">
+        <h1 className="projs-title"><span className="slashes">//</span> Evidence</h1>
         <div className="projs-wrapper">
           <Proj1Card/>
           <Proj2Card/>
@@ -17,7 +18,6 @@ function AllProj() {
           <Proj4Card/>
         </div>
       </div>
-      <hr></hr>
     </>
   )
 }

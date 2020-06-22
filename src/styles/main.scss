@@ -3,6 +3,9 @@
   margin: 0 auto;
 }
 
+.slashes{
+  color: #FFCC00;
+}
 
 .theme--light {
 --background: white;
@@ -21,8 +24,12 @@
   --github-logo: url(./assets/github-inverted.png);
 }
 #root{
-  // background-image: url(./assets/berber3.png);
-  // background-size: contain
+  background-image: url(./assets/pat.png);
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .switcher__label {
@@ -38,7 +45,6 @@
 
 .switcher__control {
   position:relative;
-  
   width:3em;
   height:1em;
   margin-right:0.5em;
@@ -80,6 +86,8 @@
   align-items: center;
   background: var(--background);
   color: var(--text-color);
+  margin: 20px 0 50px 0;
+
 
   .left-side{
     background-image: var(--neck-image);
@@ -88,17 +96,45 @@
       height: 300px;
       width: 230px;
   }
+
+  .right-side{
+    font-size: 15px;
+    .sub-title{
+      font-size: 13px;
+      text-indent: 2em;
+    }
+  }
 }
 .about{
+  display: flex;
   background: var(--background);
   color: var(--text-color);
+  margin: 100px 0 100px 0;
+
+  .left-side{
+    // margin: 50px 0 50px 0;
+    padding: 20px;
+    max-width: 40em;
+  }
+  .right-side{
+    padding: 20px;
+    max-width: 40em;
+  }
+  
+
 }
 
 .proj-box{
   background: var(--background);
-
+  margin: 50px 0 50px 0;
+  color: var(--text-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+ 
+h1.projs-title{
+  // background-color: red;
+}
   .projs-wrapper {
     display: grid;
     grid-template-columns: 300px 300px;
@@ -168,13 +204,14 @@
   flex-direction: column;
   align-items: center;
   color: var(--text-color);
+  margin-top: 100px;
 
   .linkedin-logo, .github-logo {
     height: 40px;
     margin: 5px;
   }
-  .github-logo{
-    // background-image: url(.assets/github.png);
+  div.github-logo{
+    background-image: var(--github-logo)
   }
 }
 
