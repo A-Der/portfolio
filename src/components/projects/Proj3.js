@@ -12,16 +12,33 @@ const Proj3 = () => {
         </video>
       </div>
       <p>
-          This was a group based project, we implemented the use of Mongo for our backend database to create a site where you can search for road trips all around the world using different filters / tags. Users can also post routes, add friends and send private messages to each other.
+      Working in a group this was our first time putting together a full stack app. We brainstormed and pooled our ideas, brainstorming aloud, picking out parts of ideas we liked until something was unintentionally born that everyone had contributed to. No one person thought of it yet we all have a share of it. <br></br>
+
+      We implemented the use of Mongo for our backend database to create a site where you can search for road trips all around the world using different filters / tags. Users can also post routes, add friends and send private messages to each other.
+        <hr></hr>
       </p>
-      <ul>
+      <ul className="tech-list">
         <li>React JS</li>
+        <li>Node Js</li>
         <li>Mongoose</li>
+        <li>MongoDB</li>
+        <li>Mongoose-unique-validator</li>
         <li>Bcrypt</li>
         <li>Body-Parser</li>
         <li>Express</li>
         <li>Jsonwebtoken</li>
         <li>Cloudinary</li>
+        <li>SASS</li>
+        <li>HTTP-proxy-middleware</li>
+        <li>Axios</li>
+        <li>Node-sass</li>
+        <li>React-modal</li>
+        <li>React-tooltip</li>
+        <li>React-router-dom</li>
+        <li>React-responsive-carousel</li>
+        <li>Insomnnia</li>
+        <li>Balsamiq</li>
+        <li>Heroku</li>
       </ul>
     </div>
   )

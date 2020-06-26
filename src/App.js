@@ -7,11 +7,10 @@ import Contact from './components/Contact'
 
 const App = () => {
 
-  const [theme, setTheme] = React.useState('theme--light')
+  const [theme, setTheme] = React.useState('theme--dark')
 
 
   const changeTheme = () => {
-    console.log('click')
     if (theme === 'theme--light') {
       setTheme('theme--dark')
     } else {
@@ -23,7 +22,7 @@ const App = () => {
   return (
     <div className={theme}>
       
-      <div className="switcher switcher--large">
+      <div className="switcher">
         <input onChange={changeTheme} type="checkbox" className="switcher__input" id="switcher"/>
         <label htmlFor="switcher" className="switcher__label">
           <span className="switcher__control"></span>
@@ -34,7 +33,8 @@ const App = () => {
 
       <HeroBanner />
       <AllProj />
-      <Contact />
+      <Contact
+        theme={theme} />
     </div>
   )
 }

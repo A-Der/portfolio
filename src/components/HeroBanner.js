@@ -9,8 +9,16 @@ const HeroBanner = () => {
         <div className="left-side">
         </div>
         <div className="right-side">
-          <p className="title"><span className="slashes">//</span> Assia Deramchi <em>(Ah-See-Ya)</em><br></br>
-            <span className="slashes">//</span> Junior Full Stack Web Developer</p>
+          
+          <div className="title-box">
+            <div className="title-left"><span className="slashes">//</span></div>
+            <div className="title-right">
+              <p className="title">Assia Deramchi <em>(Ah-See-Ya)</em><br></br>
+                 Junior Full Stack Web Developer</p>
+            </div>
+            
+          </div>
+          
           <hr></hr>
           <p className="sub-title">I'm proper half decent I swear.</p>
         </div>

@@ -24,7 +24,7 @@
   --github-logo: url(./assets/github-inverted.png);
 }
 #root{
-  background-image: url(./assets/pat.png);
+  background-image: url(./assets/wall.png);
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -32,15 +32,25 @@
   background-size: cover;
 }
 
+.switcher{
+  display: flex;
+
 .switcher__label {
   display:flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   // justify-content: center;
   // align-items:center;
   // margin-right:3em;
-  background-color: var(--background);
-  width: 100%;
+  // background-color: var(--background);
+  // background: none;
+  // width: 100%;
+  text-shadow: 0 0 5px #423939, 0 0 5px #f6f6f8;
   color: var(--text-color);
+  // text-shadow: -1px 1px 2px #ffffff,
+	// 			  1px 1px 2px #ffffff,
+	// 			  1px -1px 0 #ffffff,
+	// 			  -1px -1px 0 #ffffff;
+  padding-top: 5px;
 }
 
 .switcher__control {
@@ -79,6 +89,7 @@
 .switcher__input {
   display:none;
 }
+}
 
 .hero{
   display: flex;
@@ -101,7 +112,14 @@
     font-size: 15px;
     .sub-title{
       font-size: 13px;
-      text-indent: 2em;
+      text-indent: 3.5em;
+    }
+    .title-box{
+      display: flex;
+      align-items: center;
+      .title-left{
+        font-size: 2.5em;
+      }
     }
   }
 }
@@ -131,10 +149,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
-h1.projs-title{
-  // background-color: red;
-}
+
   .projs-wrapper {
     display: grid;
     grid-template-columns: 300px 300px;
@@ -188,6 +203,7 @@ h1.projs-title{
   flex-direction: column;
   align-items: center;
   color: var(--text-color);
+  // background: var(--background);
 
   .clip-box{
     display: flex;
@@ -196,6 +212,15 @@ h1.projs-title{
       width: 65%;
     }
   }
+
+  .tech-list {
+    // list-style: none;
+    li{
+    // display: inline;
+    float: left;
+    margin: 15px;
+  }
+}
 }
 
 .contact{
@@ -210,8 +235,9 @@ h1.projs-title{
     height: 40px;
     margin: 5px;
   }
-  div.github-logo{
-    background-image: var(--github-logo)
+  img.github-logo{
+    // background: var(--github-logo)
+    // background: url(./assets/github.png);
   }
 }
 
