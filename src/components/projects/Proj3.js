@@ -11,12 +11,15 @@ const Proj3 = () => {
           <source src={clip3} type="video/mp4"/>
         </video>
       </div>
-      <p>
+      <p className="about-proj">
       Working in a group this was our first time putting together a full stack app. We brainstormed and pooled our ideas, brainstorming aloud, picking out parts of ideas we liked until something was unintentionally born that everyone had contributed to. No one person thought of it yet we all have a share of it. <br></br>
 
       We implemented the use of Mongo for our backend database to create a site where you can search for road trips all around the world using different filters / tags. Users can also post routes, add friends and send private messages to each other.
-        <hr></hr>
+
       </p>
+      <div style={{ height: '1em', width: '75%' }}>
+        <hr></hr>
+      </div>
       <ul className="tech-list">
         <li>React JS</li>
         <li>Node Js</li>

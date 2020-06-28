@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Modal from 'react-modal'
 
 import Proj1 from '../Proj1'
 
 
 function Proj1Card() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const [modalStyle, setModalStyle] = useState({
+    content: {
+  
+      border: '1px solid rgb(204, 204, 204)',
+      background: '#fffafa',
+      borderRadius: '20px',
+      padding: '20px'
+    }
+  })
 
   const handleModal = () => {
     setIsOpen(!isOpen)
@@ -20,7 +29,8 @@ function Proj1Card() {
       <Modal
         ariaHideApp={false}
         onRequestClose={handleModal}
-        isOpen={isOpen}>
+        isOpen={isOpen}
+        style={modalStyle}>
         <Proj1 />
       </Modal>
     </>

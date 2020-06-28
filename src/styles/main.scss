@@ -24,7 +24,7 @@
   --github-logo: url(./assets/github-inverted.png);
 }
 #root{
-  background-image: url(./assets/wall.png);
+  background-image: url(./assets/tumeric.png);
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -208,9 +208,15 @@
   .clip-box{
     display: flex;
     justify-content: center;
+    margin: 20px;
     video{
       width: 65%;
     }
+  }
+  p.about-proj{
+    max-width: 40em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
   }
 
   .tech-list {

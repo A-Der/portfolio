@@ -6,6 +6,15 @@ import Proj3 from '../Proj3'
 
 function Proj3Card() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [modalStyle, setModalStyle] = React.useState({
+    content: {
+  
+      border: '1px solid rgb(204, 204, 204)',
+      background: '#fffafa',
+      borderRadius: '20px',
+      padding: '20px'
+    }
+  })
 
   const handleModal = () => {
     setIsOpen(!isOpen)
@@ -20,7 +29,8 @@ function Proj3Card() {
       <Modal
         ariaHideApp={false}
         onRequestClose={handleModal}
-        isOpen={isOpen}>
+        isOpen={isOpen}
+        style={modalStyle}>
         <Proj3 />
       </Modal>
     </>
