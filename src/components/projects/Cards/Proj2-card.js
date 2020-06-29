@@ -6,11 +6,12 @@ import Proj2 from '../Proj2'
 
 function Proj2Card() {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [modalStyle, setModalStyle] = React.useState({
+  const [modalStyle] = React.useState({
     content: {
   
       border: '1px solid rgb(204, 204, 204)',
-      background: '#fffafa',
+      background: '#555555',
+      color: '#fafafa',
       borderRadius: '20px',
       padding: '20px'
     }
