@@ -26,7 +26,7 @@ const HeroBanner = () => {
       <div className="about">
         <div className="left-side">
           <h1><span className="slashes">//</span> Info</h1>
-          <p>Hi, I'm Assia, I've just completed the Fully Immersive Software Engineering course with General Assembly® and I'm looking for my first permanent role in the industry.<br></br>
+          <p>Having recently completed the Fully Immersive Software Engineering course with General Assembly® I'm looking for my first permanent role in the industry.<br></br>
         Having worked in varied environments in the past 10 years, I look to bring my own unique experience to a team and become a valued member.<br></br>
         In my spare time you can find me rollerskating or reading books; both of which influences my creativity for writing poetry and abstract pieces.
           </p>
