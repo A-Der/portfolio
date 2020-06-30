@@ -109,10 +109,10 @@
   }
 
   .right-side{
-    font-size: 15px;
+    font-size: 25px;
     .sub-title{
-      font-size: 13px;
-      text-indent: 3.5em;
+      font-size: 18px;
+      text-indent: 4.2em;
     }
     .title-box{
       display: flex;
@@ -128,6 +128,7 @@
   background: var(--background);
   color: var(--text-color);
   margin: 100px 0 100px 0;
+  font-size: 1.2em;
 
   .left-side{
     // margin: 50px 0 50px 0;
@@ -149,23 +150,29 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.2em;
+  
 
   .projs-wrapper {
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-gap: 30px;
-  
-  
+    grid-gap: 4em;
+    
     div.proj1, div.proj2, div.proj3, div.proj4{
     text-align: center;
-    height: 15em;
-    width: 20em;
+    height: 13em;
+    width: 18em;
     background-color: var(--card-color);
     color: var(--proj-text);
     border-radius: 5px;
     padding: 1em;
     margin: 2em;
-  
+    :hover{
+      font-weight: bold;
+    }
+    p{
+      margin-top: 1em;
+    }
 
     .proj1-image{
       height: 150px;
@@ -202,9 +209,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--text-color);
-  // background: var(--background);
 
+  .goto-buttons{
+    border: 1px solid #ffcc00;
+    background: transparent;
+    color: grey;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  .goto-buttons:hover{
+    color: white;
+  }
   .clip-box{
     display: flex;
     justify-content: center;
@@ -220,9 +235,7 @@
   }
 
   .tech-list {
-    // list-style: none;
     li{
-    // display: inline;
     float: left;
     margin: 15px;
   }
@@ -236,22 +249,18 @@
   align-items: center;
   color: var(--text-color);
   margin-top: 100px;
+  padding-bottom: 50px;
+  font-size: 15px;
 
-  .linkedin-logo, .github-logo {
-    height: 40px;
-    margin: 5px;
+  .logos{
+    margin: 1em;
+    .linkedin-logo, .github-logo {
+      height: 40px;
+      margin: 5px;
+    }
   }
-  img.github-logo{
-    // background: var(--github-logo)
-    // background: url(./assets/github.png);
+  .email{
+    font-size: 30px;
+    font-weight: bold;
   }
-}
-
-
-.pattern {
-  height: 60px;
-  width: 100%;
-  margin: 0;
-  background-image: url(./assets/berber5.png);
-  background-size: contain;
 }

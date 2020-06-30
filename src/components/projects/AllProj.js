@@ -8,16 +8,31 @@ import Proj4Card from './Cards/Proj4-card'
 
 
 function AllProj() {
+  const [modalStyle] = React.useState({
+    content: {
+  
+      border: '1px solid rgb(204, 204, 204)',
+      background: '#373d3f',
+      color: '#fafafa',
+      borderRadius: '15px',
+      padding: '20px',
+      fontSize: '1.5em'
+    }
+  })
 
   return (
     <>
       <div className="proj-box">
         <h1 className="projs-title"><span className="slashes">//</span> Evidence</h1>
         <div className="projs-wrapper">
-          <Proj1Card/>
-          <Proj2Card/>
-          <Proj3Card/>
-          <Proj4Card/>
+          <Proj1Card
+            {...modalStyle}/>
+          <Proj2Card
+            {...modalStyle}/>
+          <Proj3Card
+            {...modalStyle}/>
+          <Proj4Card
+            {...modalStyle}/>
         </div>
       </div>
     </>

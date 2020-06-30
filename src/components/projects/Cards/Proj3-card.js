@@ -4,18 +4,9 @@ import Modal from 'react-modal'
 import Proj3 from '../Proj3'
 
 
-function Proj3Card() {
+const Proj3Card = props => {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [modalStyle] = React.useState({
-    content: {
-  
-      border: '1px solid rgb(204, 204, 204)',
-      background: '#555555',
-      color: '#fafafa',
-      borderRadius: '20px',
-      padding: '20px'
-    }
-  })
+  const [modalStyle] = React.useState(props)
 
   const handleModal = () => {
     setIsOpen(!isOpen)
