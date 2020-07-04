@@ -18,6 +18,14 @@ const App = () => {
     }
   }
 
+  // React.useEffect(() => {
+  //   if (theme === 'theme--light') {
+  //     setTheme('theme--dark')
+  //   } else {
+  //     setTheme('theme--light')
+  //   }
+  // },theme)
+
 
   return (
     <div className={theme}>
@@ -32,7 +40,8 @@ const App = () => {
 
 
       <HeroBanner />
-      <AllProj />
+      <AllProj 
+        theme={theme}/>
       <Contact
         theme={theme} />
     </div>

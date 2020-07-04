@@ -129,6 +129,7 @@
   color: var(--text-color);
   margin: 100px 0 100px 0;
   font-size: 1.2em;
+  line-height: 22px;
 
   .left-side{
     // margin: 50px 0 50px 0;
@@ -152,7 +153,13 @@
   justify-content: center;
   font-size: 1.2em;
   h1.projs-title{
+    margin-bottom: 5px;
+  }
+  h4.projs-subtitle{
     margin-bottom: 20px;
+    max-width: 30em;
+    font-style: italic;
+    font-weight: unset;
   }
   
 
@@ -175,7 +182,7 @@
     // margin: 0.5em;
     &:hover{
       transform: scale(1.05);
-      box-shadow: 0 0 10px #FFCC00;
+      box-shadow: 0 0 15px #FFCC00;
     }
     p{
       margin-top: 1em;
@@ -262,7 +269,9 @@
   margin-top: 100px;
   padding-bottom: 50px;
   font-size: 15px;
-
+h3, h5{
+  font-weight: unset;
+}
   .logos{
     margin: 1em;
     .linkedin-logo, .github-logo {

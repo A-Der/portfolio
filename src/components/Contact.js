@@ -8,7 +8,7 @@ const Contact = ({ theme }) => {
   return (
     <div className="contact">
       <h1>get in touch</h1>
-      <h3>For jobs, questions, complements as well as insults and/or death threats*</h3>
+      <h3>for jobs, questions, complements as well as insults and/or death threats*</h3>
       <h5>* I may or may not look forward to hearing from you</h5>
       <div>
         <div className='logos'>
