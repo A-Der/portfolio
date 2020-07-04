@@ -10,7 +10,6 @@ import Proj4Card from './Cards/Proj4-card'
 function AllProj() {
   const [modalStyle] = React.useState({
     content: {
-  
       border: '1px solid rgb(204, 204, 204)',
       background: '#373d3f',
       color: '#fafafa',
