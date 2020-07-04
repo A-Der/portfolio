@@ -25,7 +25,7 @@ function AllProj(props) {
   return (
     <>
       <div className="proj-box">
-        <h1 className="projs-title"><span className="slashes">//</span> Evidence</h1><h4 className="projs-subtitle">- And when my mortal body crumbles and returns to dust may I be remembered for my commercially fruitful endeavours.</h4>
+        <h1 className="projs-title"><span className="slashes">//</span> Evidence</h1><h4 className="projs-subtitle">- And when my mortal body crumbles and returns to dust may I be remembered for my commercially fruitful endeavours in technology.</h4>
         <div className="projs-wrapper">
           <Proj1Card
             {...modalStyle}/>
