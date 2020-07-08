@@ -3,12 +3,13 @@ import React from 'react'
 import linkedInLogo from '../styles/assets/linkedin.png'
 import githubLogo from '../styles/assets/github.png'
 import githubInvertedLogo from '../styles/assets/github-inverted.png'
+import gmailLogo from '../styles/assets/gmailLogo.png'
 
 const Contact = ({ theme }) => {
   return (
     <div className="contact">
       <h1>get in touch</h1>
-      <h3>for jobs, questions, complements as well as insults and/or death threats*</h3>
+      <h3>for jobs, questions, compliments as well as insults and/or sarcastic gibes*</h3>
       <h5>* I may or may not look forward to hearing from you</h5>
       <div>
         <div className='logos'>
@@ -22,6 +23,8 @@ const Contact = ({ theme }) => {
         
       </div>
       <div className='email'>
+        <img className="gmail-logo" src={gmailLogo} alt="gmail-logo"/>
+      
 at.deramchi@gmail.com
       </div>
       

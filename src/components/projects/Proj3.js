@@ -15,7 +15,7 @@ const Proj3 = () => {
         <button className='goto-buttons'>Go To Live Site</button>
       </a><br></br>
       <p className="about-proj">
-        <strong>About: </strong>Working in a group this was our first time putting together a full stack app. We brainstormed and pooled our ideas, brainstorming aloud, picking out parts of ideas we liked until something was unintentionally born that everyone had contributed to. No one person thought of it yet we all have a share of it. <br></br><br></br>
+        <strong>About: </strong>Working in a group this was our first time putting together a full stack app. We brainstormed and pooled our ideas, brainstorming aloud, picking out parts of ideas we liked until something was unintentionally born that everyone had contributed to. It was not thought up by any one person though we all had a share of it. <br></br><br></br>
 
         <strong>Brief Overview: </strong>We implemented the use of Mongo for our backend database to create a site where you can search for road trips all around the world using different filters / tags. Users can also post routes, add friends and send private messages to each other.
         Using React JS on the front end I made a detailed and multi-functioning profile and profile edit pages. With my group we worked on different parts of the website while still communicating our procedure. This was especially necessary as our work obviously overlapped and will effect the others part they are working on.

@@ -26,11 +26,11 @@ const HeroBanner = () => {
       <div className="about">
         <div className="left-side">
           <h1><span className="slashes">//</span> Info</h1><br></br>
-          <p><u>Long Version:</u> Recently completing the Fully Immersive Software Engineering course with General Assembly® I'm looking for my first permanent role in the industry.<br></br>
+          <p><u>Long Version:</u> Recently completing the fully Immersive Software Engineering course with General Assembly® I'm looking for my first permanent role in the industry.<br></br>
           I like to engage with big-picture ideas and conceptual ways of thinking and look to bring my own unique experience to a team and become a valuable contributor.<br></br>
             <br></br>
             <u>Short version:</u> <em>I was that kid who would methodically dismantle electronics to see what was going on inside.. (woopsy).</em><b></b><br></br><br></br>
-        In my spare time you can find me rollerskating or reading books; both of which influences my creativity for writing poetry and abstract pieces.
+        In my spare time you can find me rollerskating or reading books; both of which influence my creativity for writing poetry and abstract pieces.
           </p>
         </div>
         

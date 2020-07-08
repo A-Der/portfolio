@@ -271,16 +271,23 @@
   font-size: 15px;
 h3, h5{
   font-weight: unset;
+  margin: 5px;
 }
   .logos{
     margin: 1em;
     .linkedin-logo, .github-logo {
-      height: 40px;
-      margin: 6px;
+      height: 50px;
+      margin: 10px;
     }
   }
+ 
   .email{
+    display: flex;
     font-size: 30px;
     font-weight: bold;
+    .gmail-logo{
+      height: 35px;
+      margin-right: 10px;
+    }
   }
 }

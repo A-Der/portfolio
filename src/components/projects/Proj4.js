@@ -15,7 +15,7 @@ const Proj4 = () => {
         <button className='goto-buttons'>Go To Live Site</button>
       </a><br></br>
       <p className="about-proj">
-        <strong>About: </strong>We created an app akin to EventBrite, buying tickets and retiriving tickets. However with the added possibility of creating polls for talks you are the owner of to gather instant responses from your audience.<br></br>
+        <strong>About: </strong>We created an app akin to EventBrite; buying tickets and retrieving tickets for talks. Though we wanted to set it apart from EventBrite and put our own unique feature on it. We added the possibility of creating polls for talks, if you are the creator of that talk, to gather instant responses from your audience.<br></br>
       
         <strong>Brief Overview: </strong>
       
