@@ -33,7 +33,20 @@
 }
 
 .switcher{
+  padding-top: 5px;
   display: flex;
+  .status{
+    font-size: 14px;
+    font-weight: bold;
+    color: #046307;
+    text-shadow: 0 0 5px #f5f0f0, 0 0 5px #02350f;
+    display: flex;
+    align-items: center;
+    .green-gif{
+      height: 25px;
+    }
+  }
+  
 
 .switcher__label {
   display:flex;

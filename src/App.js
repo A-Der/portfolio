@@ -1,5 +1,6 @@
 import React from 'react'
 // import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import greenGif from './styles/assets/green.gif'
 
 import HeroBanner from './components/HeroBanner'
 import AllProj from './components/projects/AllProj'
@@ -36,8 +37,13 @@ const App = () => {
           <span className="switcher__control"></span>
           <span className="switcher__mode">Mode</span>
         </label>
+        <div className="status">
+        Status:<img src={greenGif} alt='green-gif' className="green-gif"/>  Actively working on 2 side projects
+        </div>
+        
       </div>
 
+      
 
       <HeroBanner />
       <AllProj 
