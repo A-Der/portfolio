@@ -10,7 +10,7 @@ const Contact = ({ theme }) => {
     <div className="contact">
       <h1>get in touch</h1>
       <h3>for jobs, questions, compliments as well as insults and/or sarcastic gibes*</h3>
-      <h5>* I may or may not look forward to hearing from you</h5>
+      <h5>*I may or may not look forward to hearing from you</h5>
       <div>
         <div className='logos'>
           <a href='https://www.linkedin.com/in/aderamchi/'>
