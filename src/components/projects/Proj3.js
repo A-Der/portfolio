@@ -11,7 +11,7 @@ const Proj3 = () => {
           <source src={clip3} type="video/mp4"/>
         </video>
       </div>
-      <a href="https://roadtrippers-ga-project.herokuapp.com/" target="_blank">
+      <a href="https://roadtrippers-ga-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
         <button className='goto-buttons'>Go To Live Site</button>
       </a><br></br>
       <p className="about-proj">
@@ -21,7 +21,7 @@ const Proj3 = () => {
         Using React JS on the front end I made a detailed and multi-functioning profile and profile edit pages. With my group we worked on different parts of the website while still communicating our procedure. This was especially necessary as our work obviously overlapped and will effect the others part they are working on.
 
       </p>
-      <a href="https://github.com/A-Der/sei-group-project-3" target="_blank">
+      <a href="https://github.com/A-Der/sei-group-project-3" target="_blank" rel="noopener noreferrer">
         <button className='goto-buttons'>See Full Read Me</button>
       </a><br></br>
       <div style={{ height: '1em', width: '75%' }}>

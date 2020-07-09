@@ -13,7 +13,7 @@ const Proj1 = () => {
           <source src={clip1} type="video/mp4"/>
         </video>
       </div>
-      <a href="https://a-der.github.io/sei-project-1/" target="_blank">
+      <a href="https://a-der.github.io/sei-project-1/" target="_blank" rel="noopener noreferrer">
         <button className='goto-buttons'>Go To Live Site</button>
       </a><br></br>
 
@@ -22,7 +22,7 @@ const Proj1 = () => {
 
       Shooting from both the shooter and army were handled using timers and the same removing and adding of a CSS image.
       </p>
-      <a href="https://github.com/A-Der/sei-project-1" target="_blank">
+      <a href="https://github.com/A-Der/sei-project-1" target="_blank" rel="noopener noreferrer">
         <button className='goto-buttons'>See Full Read Me</button>
       </a><br></br>
 
